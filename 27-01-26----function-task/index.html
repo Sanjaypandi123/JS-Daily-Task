@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>function</title>
 </head>
+
 <body>
     <h1>function task</h1>
 
@@ -12,62 +14,71 @@
 
 
     <SCript>
+        // let task1 = ()=>{
 
-        let task1 = ()=>{
-            
-            for(let a=5; a>=1; a--){
-                for(let b=1; b<=a; b++){
-                    document.writeln("s")
-                }
-                document.writeln("<br>")
-            }
+        //     for(let a=5; a>=1; a--){
+        //         for(let b=1; b<=a; b++){
+        //             document.writeln("s")
+        //         }
+        //         document.writeln("<br>")
+        //     }
+        // }
+        // let task2 = ()=>{
+        //     for(let a=1; a<=5; a++){
+        //         for(let b=5; b>=a; b--){
+        //             document.writeln(b)
+        //         }
+        //         document.writeln("<br>")
+        //     }
+        // }
+        // let task3 = ()=>{
+        //     for(let a=1; a<=5; a++){
+        //         for(let b=1; b<=5; b++){
+        //             if(b<a){
+        //                 document.writeln("&nbsp;&nbsp;")
+        //             }
+        //             else{
+        //                 document.writeln(b)
+        //             }
+        //         }
+        //         document.writeln("<br>")
+        //     }
+        // }
+
+        // let op = prompt("choose ur option \n 1  ,  2  ,  3")    
+
+        // switch(op){
+        //             case "1":
+        //                 task1()
+        //                 break;
+        //             case "2":
+        //                 task2()
+        //                 break;
+        //             case "3":
+        //                 task3()
+        //                 break;
+        //             default:
+        //                 alert("invalid option  .  1-3 option only")
+        //                 break;
+        //     }
+
+        let tamil = Number(prompt("enter ur tamil mark :"))
+        let english = Number(prompt("enter ur english mark :"))
+        let maths = Number(prompt("enter ur maths mark :"))
+        let science = Number(prompt("enter ur science mark :"))
+        let social = Number(prompt("enter ur social mark :"))
+
+
+        let totalmarks = ()=>{
+            let total = tamil + english + maths + science + social
+            console.log(total)
         }
-        let task2 = ()=>{
-            for(let a=1; a<=5; a++){
-                for(let b=5; b>=a; b--){
-                    document.writeln(b)
-                }
-                document.writeln("<br>")
-            }
-        }
-        let task3 = ()=>{
-            for(let a=1; a<=5; a++){
-                for(let b=1; b<=5; b++){
-                    if(b<a){
-                        document.writeln("&nbsp;&nbsp;")
-                    }
-                    else{
-                        document.writeln(b)
-                    }
-                }
-                document.writeln("<br>")
-            }
-        }
+        totalmarks()
+
+
         
-        let op = prompt("choose ur option \n 1  ,  2  ,  3")    
-        
-        switch(op){
-                    case "1":
-                        task1()
-                        break;
-
-                    case "2":
-                        task2()
-                        break;
-                    
-                    case "3":
-                        task3()
-                        break;
-                
-                    default:
-                        alert("invalid option  .  1-3 option only")
-                        break;
-                    
-            }
-
-
-
     </SCript>
 
 </body>
+
 </html>
