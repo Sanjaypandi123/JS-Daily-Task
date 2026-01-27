@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>ATM Task</h1>
+
+
+
+    <script>
+
+        function create(){
+            name = prompt("enter ur name")
+            phone = prompt("enter ur phone number")
+            ac_num = prompt("enter ur account number")
+            ac_balence = Number(prompt("enter ur amount"))
+            alert("Your account has been created successfully !!!!!!")
+                        
+        }
+        function deposit(){
+            let ac_number1 = prompt("enter ur account number")
+            if(ac_num === ac_number1){
+                let amount = Number(prompt("how much amount want to deposit?"))
+                ac_balence += amount
+                alert("ur amount has been deposited successfully!!!")
+            }
+            else{
+                alert("SORRY ur account number is mismatched !!!!!!")
+            }
+        }
+        function withdraw(){
+            let ac_number2 = prompt("enter ur account number")
+            if(ac_num === ac_number2){
+                let amount = Number(prompt("how much amount want to withdraw?"))
+                ac_balence -= amount
+                alert("ur amount has been withdraw successfully!!!")
+            }
+            else{
+                alert("SORRY ur account number is mismatched !!!!!!")
+            }
+        }
+        function details(){
+            console.log("============================================")
+            console.log(`Name :${name}`)
+            console.log(`phone :${phone}`)
+            console.log(`ac_num :${ac_num}`)
+            console.log(`ac_balence :${ac_balence}`)
+            console.log("============================================")
+        }
+
+        let name,phone,ac_num = ""
+        let ac_balence =0
+
+        let isexit = true
+        
+    while(isexit){
+
+        let option = prompt(
+                "choose ur option : \n 1. create account  \n 2. deposit \n 3. withdraw \n 4. bank details \n 5.exit"
+            )
+
+            switch(option){
+                    case "1":
+                        create()
+                        break;
+
+                    case "2":
+                        deposit()
+                        break;
+                    
+                    case "3":
+                        withdraw()
+                        break;
+                    case "4":
+                        details()
+                        break;
+
+                case "5":
+                    isexit = false;
+                    break;
+                default:
+                    alert("invalid option  .  1-5 option only")
+                    break;
+                    
+            }
+
+    }
+
+
+    </script>
+
+</body>
+</html>
