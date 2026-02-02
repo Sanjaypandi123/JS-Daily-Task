@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <h1>ARRAYS IN JS</h1>
+
+
+    <input type="text" id="name">
+    <button onclick="studentname()">Submit</button>
+
+    <table border="1">
+        <thead>
+            <th>S.no</th>
+            <th>Studentname</th>
+        </thead>
+        <tbody id="t_body">
+
+        </tbody>
+    </table>
+
+
+
+    <script>
+        let arr = []
+        let studentname = () => {
+            debugger
+            let names = document.getElementById("name")
+            let Tbody = document.getElementById("t_body")
+            arr.push(names.value)
+
+            let table_row = document.createElement("tr")
+            let row_colm1 = document.createElement("td")
+            let row_colm2 = document.createElement("td")
+
+            row_colm1.innerText = arr.length
+            row_colm2.innerText = arr[arr.length - 1]
+
+
+            table_row.append(row_colm1)
+            table_row.append(row_colm2)
+
+            Tbody.append(table_row)
+
+            names.value = " "
+        }
+    </script>
+
+</body>
+
+</html>
