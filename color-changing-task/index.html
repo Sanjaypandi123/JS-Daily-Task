@@ -5,54 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>colors</title>
-    <style>
-        body {
-            /* border: 1px solid red; */
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body id="body">
 
     <div class="colors">
-        <input type="color" id="bg1">
-        <input type="color" id="bg2">
-        <input type="color" id="bg3">
-        <select name="" id="tovalue">
-            <optgroup label="X and Y axis">
-                <option value="right">Right</option>
-                <option value="left">Left</option>
-                <option value="top">Top</option>
-                <option value="bottom">Bottom</option>
-            </optgroup>
-            <optgroup label="Z axis">
-                <option value="right bottom">Right bottom</option>
-                <option value="right top">Right top</option>
-                <option value="left bottom">Left bottom</option>
-                <option value="left top">Left top</option>
-                <option value="bottom right">Bottom right</option>
-                <option value="bottom left">Bottom left</option>
-                <option value="top right">Top right</option>
-                <option value="top left">Top left</option>
+        <section>
+            <input type="color" id="bg1">
+            <input type="color" id="bg2">
+            <input type="color" id="bg3">
+        </section>
+        <section>
+            <select name="" id="tovalue">
+                <optgroup label="X and Y axis">
+                    <option value="right">Right</option>
+                    <option value="left">Left</option>
+                    <option value="top">Top</option>
+                    <option value="bottom">Bottom</option>
+                </optgroup>
+                <optgroup label="Z axis">
+                    <option value="right bottom">Right bottom</option>
+                    <option value="right top">Right top</option>
+                    <option value="left bottom">Left bottom</option>
+                    <option value="left top">Left top</option>
+                    <option value="bottom right">Bottom right</option>
+                    <option value="bottom left">Bottom left</option>
+                    <option value="top right">Top right</option>
+                    <option value="top left">Top left</option>
 
-            </optgroup>
-        </select>
+                </optgroup>
+            </select>
+        </section>
 
-        <button onclick="colorchange()">Change Theame Color</button>
+        <section>
+            <button onclick="colorchange()">Change Color</button>
+        </section>
     </div>
 
 
     <div class="addtocart">
         <h1 id="cou">0</h1>
 
-        <button onclick="inc()">+</button>
-        <button onclick="dec()">-</button>
-        <button onclick="res()" type="reset">RESET</button>
+        <section>
+            <button onclick="dec()">-</button>
+            <button onclick="inc()">+</button>
+            <button onclick="res()" type="reset">RESET</button>
+        </section>
     </div>
 
 
@@ -89,9 +88,8 @@
                 alert("only >= 1 numbers")
             }
         }
-
-        let res = ()=>{
-            count=0
+        let res = () => {
+            count = 0
             number.innerText = count
         }
     </script>
