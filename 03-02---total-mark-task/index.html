@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Finding Students total marks</h1>
+        </div>
+
+
+        <div class="content">
+            <div class="form">
+                <!-- <form> -->
+                    <div class="name div">
+                        <label for="">Student Name:</label>
+                        <input type="text" id="sname">
+                        <span id="snameerr"></span>
+                    </div>
+
+                    <div class="tamil div">
+                        <label for="">Tamil Marks:</label>
+                        <input type="number" id="tam-mrk">
+                        <span id="tamerr"></span>
+                    </div>
+                    <div class="english div">
+                        <label for="">English Marks:</label>
+                        <input type="number" id="eng-mrk">
+                        <span id="engerr"></span>
+                    </div>
+                    <div class="maths div">
+                        <label for="">Maths Marks:</label>
+                        <input type="number" id="math-mrk">
+                        <span id="matherr"></span>
+                    </div>
+                    <div class="science div">
+                        <label for="">Science Marks:</label>
+                        <input type="number" id="sci-mrk">
+                        <span id="scierr"></span>
+                    </div>
+                    <div class="social div">
+                        <label for="">Social Science Marks:</label>
+                        <input type="number" id="ss-mrk">
+                        <span id="sserr"></span>
+                    </div>
+
+                    <button onclick="submit()" type="submit">Submit</button>
+                <!-- </form> -->
+            </div>
+
+            <div class="output">
+                <h1>Output</h1>
+                <div class="name">
+                    <h2>student Name</h2>
+                    <h2 id="stname"></h2>
+                </div>
+                <div class="total">
+                    <h2>total marks</h2>
+                    <h2 id="total"></h2>
+                </div>
+                <div class="avg">
+                    <h2>avarage</h2>
+                    <h2 id="avarage"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
