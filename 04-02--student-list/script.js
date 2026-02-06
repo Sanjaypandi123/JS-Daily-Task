@@ -5,7 +5,7 @@ while (ischeck) {
 
     switch (option) {
         case "1":
-            let stcount = prompt("enter the number students u want :")
+            let stcount = Number(prompt("enter the number students u want :"))
             for (let stname = 0; stname < stcount; stname++) {
                 let name = prompt("Enter the student name")
                 array.push(name)
@@ -15,7 +15,7 @@ while (ischeck) {
             break;
 
         case "2":
-            let remcount = prompt("Enter the number of students u want to remove :")
+            let remcount = Number(prompt("Enter the number of students u want to remove :"))
             for (let del = 0; del < remcount; del++) {
                 array.pop()
             }
