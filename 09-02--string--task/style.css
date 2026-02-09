@@ -11,19 +11,19 @@
     padding: 100px 0;
     display: grid;
     place-items: center;
+    color: white;
 }
 .container .box{
-    border: 1px solid red;
-    padding: 20px;
-    width: 400px;
+    padding: 20px 30px;
+    /* width: 400px; */
     border-radius: 20px;
+    background: linear-gradient(to left,rgb(2, 151, 181),rgb(1, 114, 136),#01404d);
+    box-shadow: 0 0 5px;
 }
 .container .box header{
     display: grid;
     place-items: center;
     padding-bottom: 20px;
-}
-.container .box main{
 }
 .container .box main .input{
     padding: 10px 0;
@@ -37,7 +37,13 @@
     padding: 5px 20px;
     outline: none;
     border: none;
-    border-bottom: 2px solid black;
+    background: transparent;
+    color: white;
+    font-size: 1.1rem;
+    border-bottom: 2px solid white;
+}
+::placeholder{
+    background: transparent;
 }
 .container .box main .input .btn{
     display: grid;
